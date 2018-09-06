@@ -11,9 +11,10 @@ formation and "permanently unavailable" node detection.
 Note for RabbitMQ 3.7.x Users
 -----------------------------
 
-Starting with RabbitMQ 3.7.0 (including previews and recent [snapshot builds](http://www.rabbitmq.com/snapshots.html)),
-this plugin was superseded by a [new peer discovery subsystem](http://rabbitmq.com/cluster-formation.html)
-built on the same ideas and supporting the same backends via separate plugins.
+Starting with RabbitMQ 3.7.0 this plugin was superseded by a [new peer discovery subsystem](http://rabbitmq.com/cluster-formation.html) built on the same ideas and supporting the same backends via separate plugins.
+
+This plugin therefore is **deprecated** and **should not be used** by those running RabbitMQ 3.7.0 or a later
+version.
 
 Supported Discovery Backends
 ----------------------------
