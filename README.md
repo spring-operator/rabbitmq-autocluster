@@ -11,8 +11,8 @@ formation and "permanently unavailable" node detection.
 Note for RabbitMQ 3.7.x Users
 -----------------------------
 
-Starting with RabbitMQ 3.7.0 (including previews and recent [snapshot builds](http://www.rabbitmq.com/snapshots.html)),
-this plugin was superseded by a [new peer discovery subsystem](http://rabbitmq.com/cluster-formation.html)
+Starting with RabbitMQ 3.7.0 (including previews and recent [snapshot builds](https://www.rabbitmq.com/snapshots.html)),
+this plugin was superseded by a [new peer discovery subsystem](https://rabbitmq.com/cluster-formation.html)
 built on the same ideas and supporting the same backends via separate plugins.
 
 Supported Discovery Backends
@@ -21,7 +21,7 @@ Supported Discovery Backends
 Nodes using this plugin will discover its peers on boot and (optionally) register with
 one of the supported backends:
 
-  * [AWS EC2 instance tags](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html)
+  * [AWS EC2 instance tags](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html)
   * [AWS Autoscaling Groups](https://aws.amazon.com/autoscaling/)
   * [Kubernetes](https://kubernetes.io/)
   * DNS A records
@@ -66,7 +66,7 @@ release series:
 
 * [v3.6.x](https://github.com/rabbitmq/rabbitmq-autocluster/tree/v3.6.x) targets RabbitMQ ``3.6.x`` (current ``stable`` RabbitMQ branch)
 * [v3.7.x](https://github.com/rabbitmq/rabbitmq-autocluster/tree/v3.7.x) is compatible with RabbitMQ ``3.7.x``
-  but this plugin was superseded by a [new peer discovery subsystem](http://next.rabbitmq.com/cluster-formation.html) built on the
+  but this plugin was superseded by a [new peer discovery subsystem](https://next.rabbitmq.com/cluster-formation.html) built on the
   same ideas.
 * `master` is a development branch that's not of much use at the moment.
 
@@ -81,7 +81,7 @@ Supported Erlang Versions
 -------------------------
 
 This plugin requires Erlang/OTP 18.3 or later.
-Also see the [RabbitMQ Erlang version requirements](http://next.rabbitmq.com/which-erlang.html) guide.
+Also see the [RabbitMQ Erlang version requirements](https://next.rabbitmq.com/which-erlang.html) guide.
 
 
 Binary Releases
@@ -99,9 +99,9 @@ See [release notes](https://github.com/rabbitmq/rabbitmq-autocluster/releases) f
 Installation
 ------------
 
-This plugin is installed the same way as [other RabbitMQ plugins](http://www.rabbitmq.com/plugins.html).
+This plugin is installed the same way as [other RabbitMQ plugins](https://www.rabbitmq.com/plugins.html).
 
-1. Place both ``autocluster-{version}.ez`` and the ``rabbitmq_aws-{version}.ez`` plugin files in the [RabbitMQ plugins directory](http://www.rabbitmq.com/relocate.html).
+1. Place both ``autocluster-{version}.ez`` and the ``rabbitmq_aws-{version}.ez`` plugin files in the [RabbitMQ plugins directory](https://www.rabbitmq.com/relocate.html).
 2. Enable the plugin, e.g. with ``rabbitmq-plugins enable autocluster --offline``.
 3. Configure the plugin.
 4. Start the node.
@@ -231,7 +231,7 @@ Valid log levels are `debug`, `info`, `warning`, and
 
 ### AWS Configuration
 
-The AWS backend for the autocluster supports two different node discovery, [Autoscaling Group](https://aws.amazon.com/autoscaling/) membership and [EC2 tags](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html).
+The AWS backend for the autocluster supports two different node discovery, [Autoscaling Group](https://aws.amazon.com/autoscaling/) membership and [EC2 tags](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html).
 
 The following settings impact the behavior of the AWS backend. See the AWS API Credentials section below for additional settings.
 
@@ -263,7 +263,7 @@ If ``aws_autoscaling`` is disabled, you must specify EC2 tags to use to filter t
 
 #### AWS API Configuration and Credentials
 
-As with the [AWS CLI](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html), the ``autocluster`` plugin configures the AWS API requests by attempting to resolve the values in a number of steps.
+As with the [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html), the ``autocluster`` plugin configures the AWS API requests by attempting to resolve the values in a number of steps.
 
 The configuration values are discovered in the following order:
 
@@ -281,7 +281,7 @@ The credentials values are discovered in the following order:
 
 #### AWS Credentials and Configuration Settings
 
-The following settings and environment variables impact the configuration and credentials behavior. For more information see the [Amazon AWS CLI documentation](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html).
+The following settings and environment variables impact the configuration and credentials behavior. For more information see the [Amazon AWS CLI documentation](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html).
 
 | Environment Variable            | Setting Key        | Type       | Default       |
 |---------------------------------|--------------------|------------|---------------|
@@ -371,7 +371,7 @@ runcmd:
 ```
 ### Consul configuration
 
-The following settings impact the configuration of the [Consul](http://consul.io) backend for the autocluster plugin:
+The following settings impact the configuration of the [Consul](https://consul.io) backend for the autocluster plugin:
 
 <dl>
   <dt>Consul Scheme</dt>
@@ -578,7 +578,7 @@ The following settings apply to the [etcd](https://coreos.com/etcd/docs/latest/)
 
 ### K8S configuration
 
-The following settings impact the configuration of the [Kubernetes](http://kubernetes.io) backend for the autocluster plugin:
+The following settings impact the configuration of the [Kubernetes](https://kubernetes.io) backend for the autocluster plugin:
 
 <dl>
   <dt>K8S Scheme</dt>

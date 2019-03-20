@@ -21,7 +21,7 @@
 -include_lib("rabbitmq_aws/include/rabbitmq_aws.hrl").
 
 -define(INSTANCE_ID_URL,
-        "http://169.254.169.254/latest/meta-data/instance-id").
+        "https://169.254.169.254/latest/meta-data/instance-id").
 
 -type tags() :: [{string(), string()}].
 -type filters() :: [{string(), string()}].

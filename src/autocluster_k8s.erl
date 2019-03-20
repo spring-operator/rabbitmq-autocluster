@@ -106,7 +106,7 @@ maybe_ready_address(Subset) ->
     end.
 
 %% @doc Return a list of nodes
-%%    see http://kubernetes.io/docs/api-reference/v1/definitions/#_v1_endpoints
+%%    see https://kubernetes.io/docs/api-reference/v1/definitions/#_v1_endpoints
 %% @end
 %%
 -spec extract_node_list(term()) -> [binary()].
